@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
@@ -34,11 +34,7 @@ step(-2)
 # Your code here:
 # -----------------------------------------------
 def ReLu(x, cutoff = 0):
-  return numpy.maximum(x, cutoff)
-  
-# Example:
-x = numpy.array([-3, 4, 3, -6, -1, 0])
-ReLu(x)
+  return np.maximum(x, cutoff)
 
 # -----------------------------------------------
 
@@ -63,7 +59,7 @@ x = [
   [4, 5, -1]
 ]
 
-y = numpy.array([4, 1, -2])
+y = np.array([4, 1, -2])
 
 neural_net_layer(x, y)
 
